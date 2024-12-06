@@ -23,6 +23,31 @@
   footer{
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }  
+  grid{
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  }  
+
+  .grid-cell {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
+        .grid-cell img {
+            height: 110pt;
+            width: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .grid-cell b {
+            text-align: center;
+            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        }
   </style>
   <script src="https://cdn.tailwindcss.com">
   </script> 
@@ -43,59 +68,87 @@
     </div>
  </div>
 </header>
-  <nav class="flex justify-center space-x-8 border-b border-gray-300 pb-2">
-   <a class="text-orange-500 font-medium" href="/index.html">
-    home
-   </a>
-   <a class="text-gray-600 hover:text-orange-500" href="/research.html">
-    research
-   </a>
-   <a class="text-gray-600 hover:text-orange-500" href="/classes.html">
-    classes
-   </a>
-   <a class="text-gray-600 hover:text-orange-500" href="/about.html">
-    about
-   </a>
-   <a class="text-gray-600 hover:text-orange-500" href="/files/hare_cv.pdf">
-    cv
-   </a>
-  </nav>
+<nav class="flex justify-center space-x-8 border-b border-gray-300 pb-2 max-w-1xl mx-10">
+  <a class="text-orange-500 font-medium" href="/index.html">
+   home
+  </a>
+  <a class="text-gray-600 hover:text-orange-500" href="/research.html">
+   research
+  </a>
+  <a class="text-gray-600 hover:text-orange-500" href="/classes.html">
+   classes
+  </a>
+  <a class="text-gray-600 hover:text-orange-500" href="/about.html">
+   about
+  </a>
+  <a class="text-gray-600 hover:text-orange-500" href="/files/hare_cv.pdf">
+   cv
+  </a>
+ </nav>
 
 <body class="bg-white text-black font-serif">
     <div class="max-w-1xl mx-auto py-4 px-4">
-        <div class="text-center">
-            <a href="/images/VSG2016_partisandistpriorityscores_ratings_2016.png">
-            <img src="/images/VSG2016_partisandistpriorityscores_ratings_2016.png" alt="Graph showing data from the 2011-2019 VOTER Panel Survey (2016 Wave) for Democratic and Republican respondents" title="Graph showing data from the 2011-2019 VOTER Panel Survey (2016 Wave) for Democratic and Republican respondents" class="mx-auto" style="width: 450px; height: auto;">
-            </a>
+
+          <div class="grid py-0 px-10 mx-auto mt-4 text-med leading-relaxed font-serif" style="display: grid; max-width: 900px; grid-template-columns: repeat(3, 1fr); gap: 5px; font-family: Arial; margin-bottom: 5px; padding-bottom: 5px;">
+            <div class="grid-cell"><a href="/files/Measuring Swing Voters with a Supervised Machine Learning Ensemble.pdf">
+                <img src="/images/swingvoter_webpage1.png" alt="Measuring Swing Voters with a Machine Learning Approach">
+                <b>Measuring Swing Voters with a Machine Learning Approach</b></a>
+            </div>
+            <div class="grid-cell"><a href="/files/Moral Epistemology and Ideological Conflict in American Political Behavior.pdf">
+                <img src="/images/moralepistemology1.png" alt="Moral Epistemology and Ideological Conflict in American Political Behavior">
+                <b>Moral Epistemology and Ideological Conflict in American Political Behavior</b></a>
+            </div> 
+            <div class="grid-cell"><a href="/files/priorityvoting_V2.pdf">
+                <img src="/images/VSG2016_partisandistpriorityscores_ratings_2016.png" alt="Priority Voting: Reconsidering the Role of Issue Salience in American Voting Behavior">
+                <b>Priority Voting: Reconsidering the Role of Issue Salience in American Voting Behavior</b></a>
+            </div>
+            <div class="grid-cell"><a href="/files/Assessing the Structure of Policy Preferences A Hard Test of the Low-Dimensionality Hypothesis.pdf">
+                <img height="95pt" src="/images/anes2012_individualstressvalues_screeplots.png" alt="Assessing the Structure of Policy Preferences A Hard Test of the Low-Dimensionality Hypothesis">
+                <b>Assessing the Structure of Policy Preferences A Hard Test of the Low-Dimensionality Hypothesis</b></a>
+            </div>
+            <div class="grid-cell"><a href="https://doi.org/10.1201/9781315197609">
+                <img src="/images/asmcjr_cover.png" alt="Analyzing Spatial Models of Choice and Judgment, 2e">
+                <b>Analyzing Spatial Models of Choice and Judgment, 2e</b></a>
+            </div>
+            <div class="grid-cell"><a href="https://doi.org/10.1017/S000712342100051X">
+                <img src="/images/DOIRT_valuespartyfits_bysophis.png" alt="Constrained Citizens? Ideological Structure and Conflict Extension in the US Electorate, 1980-2016">
+                <b>Constrained Citizens? Ideological Structure and Conflict Extension in the US Electorate, 1980-2016</b></a>
+            </div>
+            <div class="grid-cell"><a href="
+              https://doi.org/10.48550/arXiv.2310.17888">
+              <img src="/images/generaloverview.png" alt="Large Language Models as Subpopulation Representative Models: A Review">
+              <b>Large Language Models as Subpopulation Representative Models: A Review</b></a>
+              </div>
+            <div class="grid-cell"><a href="/files/What Ordered Optimal Classification Reveals about Ideological Structure Cleavages and Polarization in the American Mass Public.pdf">
+                <img src="/images/ocposter.png" alt="What Ordered Optimal Classification Reveals about Ideological Structure Cleavages and Polarization in the American Mass Public">
+                <b>What Ordered Optimal Classification Reveals about Ideological Structure Cleavages and Polarization in the American Mass Public</b></a><br>
+                <p><a href="https://github.com/tzuliu/ooc"><code>ooc</code> package (<code>R</code>)</a></p>
+            </div>
+            <div class="grid-cell">
+                <img src="/images/montecarlo_utilityfunctions.png" alt="Are Voters Risk Averse? Specifying Utility Functions in Spatial Models of Voting in Mass Publics">
+              <b>Are Voters Risk Averse? Specifying Utility Functions in Spatial Models of Voting in Mass Publics</b><br>
+              <p><a href="https://CRAN.R-project.org/package=anominate"><code>anominate</code> package (<code>R</code>)</a></p>
+          </div>
+          <div class="grid-cell"><a href="/files/At the Original Position As a Fetus.pdf">
+            <img src="/images/rawls.jpg" alt="At the Original Position As a Fetus: Rawlsian Political Theory and Catholic Bioethics">
+            <b>At the Original Position As a Fetus: Rawlsian Political Theory and Catholic Bioethics</b></a>
         </div>
-        <blockquote class="text-center text-med italic mt-4">
-            “Any sufficiently advanced technology<br>is indistinguishable from magic.”
-            <br>
-            <span class="text-med font-light">– Arthur C. Clarke</span>
-        </blockquote>
-        <div class="py-5 px-10 mx-auto mt-4 text-med leading-relaxed" style="max-width: 750px">
-            <p>
-            I am an associate professor of political science at the University of California, Davis. I received my PhD in political science from the University of Georgia and my BA and MA in political science from the University of Southern Mississippi.
-            </p>
-            <p class="mt-4">
-            My research agenda encompasses ideology and voting behavior in the mass public, campaign strategy, politics and religion, and political polarization. Methodologically, I am interested in applying measurement theory and ideal point estimation, Bayesian methods, and machine learning to model political behavior.
-            </p>
-            <p class="mt-4">
-            I am currently working on a series of projects involving the measurement of issue salience to voters and the use of scaling methods to analyze the structure of ideology in the American electorate.
-            </p>
-            <p class="mt-4">
-            I have also worked as a consultant on data analytics projects involving political campaigns, including Carly Fiorina's Super PAC (CARLY for America) during the 2016 presidential election.
-            </p>
-        </div>
-        <footer class="mt-10">
-            <div class="border-t border-gray-300 pt-4 flex justify-between items-center">
-                <span class="text-sm text-gray-600">©2024 by Christopher Hare</span>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-gray-600 hover:text-black"><i class="fab fa-google"></i></a>
-                </div>
+            <div class="grid-cell"><a href="/files/Polarized Networks New Evidence on American Voters Political Discussion Networks.pdf">
+                <img src="/images/alphabiasplot_combined.png" alt="Polarized Networks? New Evidence on American Voters' Political Communication Networks">
+                <b>Polarized Networks? New Evidence on American Voters' Political Communication Networks</b></a>
+            </div>
+            <div class="grid-cell"><a href="/files/The Polarization of Contemporary American Politics.pdf">
+              <img src="/images/polity.png" alt="The Polarization of Contemporary American Politics">
+              <b>The Polarization of Contemporary American Politics</b></a>
+          </div>
+        </div>      
+
+        <footer class="mt-10 mx-6">
+          <div class="border-t border-gray-300 pt-4 flex justify-between items-center">
+          <span class="text-sm text-gray-600">©2024 by Christopher Hare</span>
+          <div class="flex space-x-4">
+            <a href="https://twitter.com/PeauxliSci?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">@PeauxliSci</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
             </div>
         </footer>
     </div>

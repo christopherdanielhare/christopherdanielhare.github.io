@@ -75,22 +75,25 @@
   margin-right: 10px;
 }
 
+
+
   .container {
-    display: grid;
-    grid-template-columns: 32% 68%;
-    width: 80%;
-    margin: 0 auto;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
 
 .left-column {
-   width: 100%;
+   width: 32%;
    background: #FFF;
    padding: 20px;
    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .right-column {
-   width: 100%;
+   width: 68%;
    padding: 20px;
 }
 

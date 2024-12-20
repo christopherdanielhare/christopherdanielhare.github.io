@@ -1,12 +1,12 @@
 <html lang="en"><head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>
    Christopher Hare - Political Scientist
   </title>
   <style>
-body {
-  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
   h1 {
     color: navy; font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -46,13 +46,13 @@ body {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 18px;
-  color: #d43f5a;
+  color: #fe4f6c;
 }
 @media (max-width: 400px) {
   .about-text h4 {
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-size: 18px;
-    color: #d43f5a;
+    color: #fe4f6c;
   }
 }
 .about-text p {
@@ -75,13 +75,12 @@ body {
   margin-right: 10px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  width: 80%;
-  margin: 0 auto;
-}
+  .container {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 .left-column {
    width: 100%;
@@ -110,15 +109,10 @@ body {
    background: #EB4053;
 }
 
-
-.theme-color {
-  color: #d43f5a; /* Darker shade for better contrast */
-}
-
 .px-btn.theme {
-    background: #d43f5a;
+    background: #fe4f6c;
     color: #ffffff;
-    border: 2px solid #d43f5a;
+    border: 2px solid #fe4f6c;
 }
 .px-btn {
     padding: 0 20px;
@@ -139,13 +133,8 @@ body {
 
 .px-btn.theme-t {
     background: transparent;
-    border: 2px solid #d43f5a;
-    color: #d43f5a;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+    border: 2px solid #fe4f6c;
+    color: #fe4f6c;
 }
 
 
@@ -190,9 +179,9 @@ img {
 <body class="bg-white text-black font-serif">
     <div class="max-w-1xl mx-auto py-4 px-4">
         <div class="text-left">
-          <div class="container">
-            <div class="left-column", style="max-width: 40%">
-                <img src="/images/chrishare2024.jpeg" alt="" style="max-width: 40%; height: auto;">
+          <div class="container" style="max-width: 775px">
+            <div class="left-column">
+                <img src="/images/chrishare2024.jpeg" alt="">
                 <div class="btn-bar mt-4">
                   <a href="https://scholar.google.com/citations?user=RwbGZXwAAAAJ" class="px-btn theme">Google Scholar</a>
                   <a href="https://github.com/christopherdanielhare" class="px-btn theme-t mt-4">GitHub page</a>
@@ -200,7 +189,7 @@ img {
                   
                   </div>
             </div>
-            <div class="right-column", style="max-width: 60%">
+            <div class="right-column">
               <div class="about-text">
                 <h3 class="dark-color" style="margin-top:-10px;">About Me</h3>
                 <h4 class="theme-color">A child of the House of Commons</h4>

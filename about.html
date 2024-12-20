@@ -1,12 +1,12 @@
 <html lang="en"><head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
    Christopher Hare - Political Scientist
   </title>
   <style>
-    body {
-    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
   h1 {
     color: navy; font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -75,12 +75,13 @@
   margin-right: 10px;
 }
 
-  .container {
-    display: grid;
-    grid-template-columns: 32% 68%;
-    width: 80%;
-    margin: 0 auto;
-  }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
 
 .left-column {
    width: 100%;
@@ -109,6 +110,11 @@
    background: #EB4053;
 }
 
+
+.theme-color {
+  color: #d43f5a; /* Darker shade for better contrast */
+}
+
 .px-btn.theme {
     background: #fe4f6c;
     color: #ffffff;
@@ -135,6 +141,11 @@
     background: transparent;
     border: 2px solid #fe4f6c;
     color: #fe4f6c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
